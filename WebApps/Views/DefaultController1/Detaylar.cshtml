@@ -1,0 +1,49 @@
+﻿@model WebApps.Models.Urun
+
+@{
+    ViewData["Title"] = "Detaylar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detaylar</h1>
+
+<div>
+    <h4>Urun</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.adi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.adi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.turu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.turu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.aciklamasi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.aciklamasi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fiyat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fiyat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.durum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.durum2)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
